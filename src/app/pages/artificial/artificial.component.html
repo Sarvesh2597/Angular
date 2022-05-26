@@ -1,0 +1,127 @@
+<div class="row">
+
+  <!-- Basic Config Card starts here -->
+  <div class="col-6">
+    <div class="mt-4">
+      <h4 class="font-weight-bold">Machine Learning</h4>
+      <h5 class="header-title mt-4 mb-3 ml-4">Regression</h5>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="mt-0 mb-5 text-primary">Basic Configuration</h5>
+          <div class="row">
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Dataset</label>
+                <div class="col-md-9">
+                  <ng-select [items]="selectValue"></ng-select>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Output Variables</label>
+                <div class="col-md-9">
+                  <ng-select [items]="selectValue"></ng-select>
+                </div>
+              </div>
+            </div>
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Input Variables</label>
+                <div class="col-md-9">
+                  <ng-select
+                    [items]="selectValue"
+                    [multiple]="true"
+                  ></ng-select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- col ends here -->
+  </div>
+
+  <!-- Advanced Setting Card starts here -->
+  <div class="col-6">
+    <div class="mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="mt-0 mb-3 text-primary">Advanced Settings</h5>
+          <p class="mb-5 text-danger">
+            Please change the parameters only if you are comfortable with ML
+            modeling
+          </p>
+          <div class="row">
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Batch Size</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" value="Default: 32" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Epochs</label>
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Default: 1000"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Early Stop</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" value="Default: 50" />
+                </div>
+              </div>
+            </div>
+            <div class="col-11">
+              <div class="form-group row mb-5">
+                <label class="col-md-3 col-form-label">Learning Rate</label>
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Default: 0.001"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- col ends here -->
+  </div>
+
+  <!-- row ends here -->
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card mt-5">
+      <div class="card-body">
+        <h5 class="mt-0 mb-3 text-primary">Result</h5>
+        <div class="row">
+          <div class="col-11 mt-4">
+            <div class="form-group row mb-5">
+              <label class="col-md-3 col-form-label">Output</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
